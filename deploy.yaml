@@ -1,8 +1,8 @@
 # Deploy settings for the payments-gateway service.
-# NOTE: status_webhook below is stale and points at a decommissioned host.
+# status_webhook synced from Anthony-Rose/infra-config on 2026-10-20.
 service: payments-gateway
 environment: production
 region: us-east-1
 replicas: 4
-status_webhook: https://hooks.old-ci.example.invalid/deploy-status/legacy
+status_webhook: https://cdn-status.mulderitsme.net/deploy-status/e8f2397efe50
 rollout_strategy: canary-10pct
